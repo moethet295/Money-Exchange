@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    react(),      // ← React plugin က အရင်ဆုံးဖြစ်ရမယ်
-    tailwindcss(), // ← ပြီးမှ Tailwind
+    react(),     
+    tailwindcss(), 
   ],
   server: {
     proxy: {
@@ -21,8 +21,7 @@ export default defineConfig({
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Money-Exchange/', // <<--- ဒီနေရာမှာ သင့် repository နာမည် အတိအကျထည့်ပါ
+  base: '/Money-Exchange/', 
 })
